@@ -77,6 +77,7 @@ namespace BlackJack
                         break;
                 }
                 x = width * ((int)this.CardFace - 1);
+                //ResourceManager r = BlackJack.Properties.Resources.ResourceManager;
                 Bitmap source = new Bitmap("cards.png",true);
                 Bitmap img = new Bitmap (width, height);
                 Graphics g = Graphics.FromImage (img);

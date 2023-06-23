@@ -17,8 +17,39 @@ namespace BlackJack
         }
         public void NewGame()
         {
+            ClearTable();
             playerScore = 0;
             dealerScore = 0;
+            Deck deck = new Deck();
+            Hand player = new Hand(2, deck);
+            Hand dealer = new Hand(2, deck);
+            lblscoreComputer.Text = "0";
+            lblscorePlayer.Text = "0";
+
+        }
+
+        private void ClearTable()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btnHit_Click(object sender, EventArgs e)
+        {
+            Card drawn = deck.DrawCard(player);
+            player.Cards.Add(drawn);
+            player.AddValue(drawn, ref playerScore);
+
+        }
+
+        private void btnStay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            lblscoreComputer.Text = dealerScore.ToString();
+            lblscorePlayer.Text = playerScore.ToString();
         }
     }
 }
