@@ -32,7 +32,6 @@
             lblDealer = new Label();
             btnHit = new Button();
             btnStay = new Button();
-            btnDeal = new Button();
             dealerCard1 = new PictureBox();
             dealerCard2 = new PictureBox();
             playerCard2 = new PictureBox();
@@ -45,6 +44,7 @@
             playerCard7 = new PictureBox();
             playerCard9 = new PictureBox();
             btnNewGame = new Button();
+            dealerDraws = new Label();
             ((System.ComponentModel.ISupportInitialize)dealerCard1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dealerCard2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)playerCard2).BeginInit();
@@ -61,20 +61,20 @@
             // lblscorePlayer
             // 
             lblscorePlayer.AutoSize = true;
-            lblscorePlayer.Location = new Point(970, 424);
+            lblscorePlayer.Location = new Point(850, 421);
             lblscorePlayer.Name = "lblscorePlayer";
-            lblscorePlayer.Size = new Size(59, 25);
+            lblscorePlayer.Size = new Size(98, 25);
             lblscorePlayer.TabIndex = 0;
-            lblscorePlayer.Text = "label1";
+            lblscorePlayer.Text = "Your score:";
             // 
             // lblDealer
             // 
             lblDealer.AutoSize = true;
-            lblDealer.Location = new Point(784, 9);
+            lblDealer.Location = new Point(850, 9);
             lblDealer.Name = "lblDealer";
-            lblDealer.Size = new Size(59, 25);
+            lblDealer.Size = new Size(113, 25);
             lblDealer.TabIndex = 1;
-            lblDealer.Text = "label1";
+            lblDealer.Text = "Dealer score:";
             // 
             // btnHit
             // 
@@ -96,15 +96,6 @@
             btnStay.UseVisualStyleBackColor = true;
             btnStay.Click += btnStay_Click;
             // 
-            // btnDeal
-            // 
-            btnDeal.Location = new Point(703, 405);
-            btnDeal.Name = "btnDeal";
-            btnDeal.Size = new Size(112, 34);
-            btnDeal.TabIndex = 5;
-            btnDeal.Text = "Deal";
-            btnDeal.UseVisualStyleBackColor = true;
-            // 
             // dealerCard1
             // 
             dealerCard1.Location = new Point(235, 12);
@@ -115,7 +106,7 @@
             // 
             // dealerCard2
             // 
-            dealerCard2.Location = new Point(371, 12);
+            dealerCard2.Location = new Point(344, 12);
             dealerCard2.Name = "dealerCard2";
             dealerCard2.Size = new Size(88, 129);
             dealerCard2.TabIndex = 7;
@@ -195,19 +186,29 @@
             // 
             // btnNewGame
             // 
-            btnNewGame.Location = new Point(36, 33);
+            btnNewGame.Location = new Point(12, 33);
             btnNewGame.Name = "btnNewGame";
-            btnNewGame.Size = new Size(96, 45);
+            btnNewGame.Size = new Size(185, 45);
             btnNewGame.TabIndex = 17;
-            btnNewGame.Text = "Surrender";
+            btnNewGame.Text = "Restart";
             btnNewGame.UseVisualStyleBackColor = true;
             btnNewGame.Click += btnNewGame_Click;
+            // 
+            // dealerDraws
+            // 
+            dealerDraws.AutoSize = true;
+            dealerDraws.Location = new Point(399, 144);
+            dealerDraws.Name = "dealerDraws";
+            dealerDraws.Size = new Size(118, 25);
+            dealerDraws.TabIndex = 18;
+            dealerDraws.Text = "Dealer draws:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 504);
+            Controls.Add(dealerDraws);
             Controls.Add(btnNewGame);
             Controls.Add(playerCard9);
             Controls.Add(playerCard8);
@@ -220,7 +221,6 @@
             Controls.Add(playerCard1);
             Controls.Add(dealerCard2);
             Controls.Add(dealerCard1);
-            Controls.Add(btnDeal);
             Controls.Add(btnStay);
             Controls.Add(btnHit);
             Controls.Add(lblDealer);
@@ -249,7 +249,6 @@
         private Label lblDealer;
         private Button btnHit;
         private Button btnStay;
-        private Button btnDeal;
         private PictureBox dealerCard1;
         private PictureBox dealerCard2;
         private PictureBox playerCard2;
@@ -262,5 +261,6 @@
         private PictureBox playerCard7;
         private PictureBox playerCard9;
         private Button btnNewGame;
+        private Label dealerDraws;
     }
 }

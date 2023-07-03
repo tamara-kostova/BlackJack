@@ -44,7 +44,7 @@ namespace BlackJack
                 btnStay.Enabled = true;
 
                 isGameOver = false;
-                btnNewGame.Text = "Quit";
+                btnNewGame.Text = "Restart";
 
                 playerCard3.Visible = false;
                 playerCard4.Visible = false;
@@ -54,7 +54,8 @@ namespace BlackJack
                 playerCard8.Visible = false;
                 playerCard9.Visible = false;
 
-                lblDealer.Visible = true;
+                lblDealer.Visible = false;
+                dealerDraws.Visible = false;
 
                 rnCard = 0;
                 rnSuit = 0;
@@ -74,9 +75,12 @@ namespace BlackJack
                 Random random = new Random();
 
                 dScore1 = random.Next(1, 13);
+
                 ConvertFaceCardToNumberValue(dScore1);
                 dScore1 = cardValue;
+
                 dScore2 = random.Next(1, 13);
+
                 ConvertFaceCardToNumberValue(dScore2);
                 dScore2 = cardValue;
                 ConvertFaceCardToFileName(dScore2);
@@ -84,11 +88,13 @@ namespace BlackJack
                 dealerScore = dScore1 + dScore2;
 
                 dealerCard1.Image = Image.FromFile("cards/back-red-75-2.png");
+
                 SelectSuit();
                 dealerCard2.Image = Image.FromFile("cards/" + suit + "-" + card + "-75.png");
                 DealerSecondCard = suit + "-" + card + "-75.png";
 
-                lblDealer.Visible = true;
+                Debug.Print("dealerScore: " + dealerScore);
+                lblDealer.Visible = false;
                 lblDealer.Text = "Dealer score: " + dealerScore;
 
                 if (dealerScore < 21)
@@ -124,10 +130,14 @@ namespace BlackJack
         {
             Random random = new Random();
             rnCard = random.Next(1, 13);
+            Debug.Print("DealCard (rnCard): " + rnCard.ToString());
             ConvertFaceCardToFileName(rnCard);
+            Debug.Print("DealCard (rnCard->Face): " + card);
             ConvertFaceCardToNumberValue(rnCard);
+            Debug.Print("DealCard (rnCard->Num): " + cardValue);
             SelectSuit();
             dCard = suit + "-" + card + "-75.png";
+            Debug.Print("DealCard (dCard): " + dCard);
         }
 
         private void DealPlayerCard()
@@ -176,7 +186,7 @@ namespace BlackJack
             }
 
             playerScore += cardValue;
-            lblscorePlayer.Text = "Total: " + playerScore;
+            lblscorePlayer.Text = "Your score: " + playerScore;
 
             if (playerScore > 21)
                 GameOver("playerBust");
@@ -196,10 +206,47 @@ namespace BlackJack
 
             dealerCard1.Image = Image.FromFile("cards/" + suit + "-" + card + "-75.png");
 
-            if (dealerScore < 17 && dealerScore <= 21)
+            if (dealerScore < 17 && playerCardsCount < 9)
             {
+                dealerDraws.Visible = true;
                 DealCard();
                 dealerScore += rnCard;
+
+                if (playerCardsCount == 2)
+                {
+                    playerCard3.Image = Image.FromFile("cards/" + dCard);
+                    playerCard3.Visible = true;
+                }
+                else if (playerCardsCount == 3)
+                {
+                    playerCard4.Image = Image.FromFile("cards/" + dCard);
+                    playerCard4.Visible = true;
+                }
+                else if (playerCardsCount == 4)
+                {
+                    playerCard5.Image = Image.FromFile("cards/" + dCard);
+                    playerCard5.Visible = true;
+                }
+                else if (playerCardsCount == 5)
+                {
+                    playerCard6.Image = Image.FromFile("cards/" + dCard);
+                    playerCard6.Visible = true;
+                }
+                else if (playerCardsCount == 6)
+                {
+                    playerCard7.Image = Image.FromFile("cards/" + dCard);
+                    playerCard7.Visible = true;
+                }
+                else if (playerCardsCount == 7)
+                {
+                    playerCard8.Image = Image.FromFile("cards/" + dCard);
+                    playerCard8.Visible = true;
+                }
+                else if (playerCardsCount == 8)
+                {
+                    playerCard9.Image = Image.FromFile("cards/" + dCard);
+                    playerCard9.Visible = true;
+                }
                 Stay();
             }
             if (isGameOver == false)
@@ -231,26 +278,26 @@ namespace BlackJack
             dealerCard1.Image = Image.FromFile("cards/" + suit + "-" + card + "-75.png");
 
             if (Condition == "playerBust")
-                MessageBox.Show("Loss");
+                MessageBox.Show("Your score is larger than 21. Loss", "GAME OVER");
             else if (Condition == "dealer21")
-                MessageBox.Show("The dealer's hand was 21! Game over!", "Loss");
+                MessageBox.Show("The dealer's hand is 21. Loss", "GAME OVER");
             else if (Condition == "dealerWins")
-                MessageBox.Show("Shame, the dealer's hand was higher than yours.", "Loss");
+                MessageBox.Show("The dealer's hand is higher than yours. Loss", "GAME OVER");
             else if (Condition == "tooManyCards")
-                MessageBox.Show("You used too many cards. You lost.", "Loss");
+                MessageBox.Show("You used too many cards. Loss", "GAME OVER");
             else if (Condition == "playerWins")
             {
-                MessageBox.Show("Your hand is higher than the dealer's. You win!", "Win");
+                MessageBox.Show("Your hand is higher than the dealer's. You win!", "YOU WON");
                 playerWon = true;
             }
             else if (Condition == "dealerBust")
             {
-                MessageBox.Show("The dealer busted. You win!", "Win");
+                MessageBox.Show("The dealer's hand is higher than 21. Win", "YOU WON");
                 playerWon = true;
             }
             else if (Condition == "draw")
             {
-                MessageBox.Show("You tied with the dealer.", "Draw");
+                MessageBox.Show("You tied with the dealer. Tie", "DRAW");
                 isDraw = true;
             }
         }
