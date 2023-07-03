@@ -100,7 +100,7 @@
             // 
             dealerCard1.Location = new Point(235, 12);
             dealerCard1.Name = "dealerCard1";
-            dealerCard1.Size = new Size(88, 129);
+            dealerCard1.Size = new Size(75, 107);
             dealerCard1.TabIndex = 6;
             dealerCard1.TabStop = false;
             // 
@@ -108,7 +108,7 @@
             // 
             dealerCard2.Location = new Point(344, 12);
             dealerCard2.Name = "dealerCard2";
-            dealerCard2.Size = new Size(88, 129);
+            dealerCard2.Size = new Size(75, 107);
             dealerCard2.TabIndex = 7;
             dealerCard2.TabStop = false;
             // 
@@ -116,7 +116,7 @@
             // 
             playerCard2.Location = new Point(371, 374);
             playerCard2.Name = "playerCard2";
-            playerCard2.Size = new Size(88, 129);
+            playerCard2.Size = new Size(75, 107);
             playerCard2.TabIndex = 9;
             playerCard2.TabStop = false;
             // 
@@ -124,7 +124,7 @@
             // 
             playerCard1.Location = new Point(235, 374);
             playerCard1.Name = "playerCard1";
-            playerCard1.Size = new Size(88, 129);
+            playerCard1.Size = new Size(75, 107);
             playerCard1.TabIndex = 8;
             playerCard1.TabStop = false;
             // 
@@ -132,7 +132,7 @@
             // 
             playerCard4.Location = new Point(168, 184);
             playerCard4.Name = "playerCard4";
-            playerCard4.Size = new Size(88, 129);
+            playerCard4.Size = new Size(75, 107);
             playerCard4.TabIndex = 11;
             playerCard4.TabStop = false;
             // 
@@ -140,7 +140,7 @@
             // 
             playerCard3.Location = new Point(32, 184);
             playerCard3.Name = "playerCard3";
-            playerCard3.Size = new Size(88, 129);
+            playerCard3.Size = new Size(75, 107);
             playerCard3.TabIndex = 10;
             playerCard3.TabStop = false;
             // 
@@ -148,7 +148,7 @@
             // 
             playerCard6.Location = new Point(443, 184);
             playerCard6.Name = "playerCard6";
-            playerCard6.Size = new Size(88, 129);
+            playerCard6.Size = new Size(75, 107);
             playerCard6.TabIndex = 13;
             playerCard6.TabStop = false;
             // 
@@ -156,7 +156,7 @@
             // 
             playerCard5.Location = new Point(307, 184);
             playerCard5.Name = "playerCard5";
-            playerCard5.Size = new Size(88, 129);
+            playerCard5.Size = new Size(75, 107);
             playerCard5.TabIndex = 12;
             playerCard5.TabStop = false;
             // 
@@ -164,7 +164,7 @@
             // 
             playerCard8.Location = new Point(703, 184);
             playerCard8.Name = "playerCard8";
-            playerCard8.Size = new Size(88, 129);
+            playerCard8.Size = new Size(75, 107);
             playerCard8.TabIndex = 15;
             playerCard8.TabStop = false;
             // 
@@ -172,7 +172,7 @@
             // 
             playerCard7.Location = new Point(567, 184);
             playerCard7.Name = "playerCard7";
-            playerCard7.Size = new Size(88, 129);
+            playerCard7.Size = new Size(75, 107);
             playerCard7.TabIndex = 14;
             playerCard7.TabStop = false;
             // 
@@ -180,7 +180,7 @@
             // 
             playerCard9.Location = new Point(834, 184);
             playerCard9.Name = "playerCard9";
-            playerCard9.Size = new Size(88, 129);
+            playerCard9.Size = new Size(75, 107);
             playerCard9.TabIndex = 16;
             playerCard9.TabStop = false;
             // 
@@ -188,7 +188,7 @@
             // 
             btnNewGame.Location = new Point(12, 33);
             btnNewGame.Name = "btnNewGame";
-            btnNewGame.Size = new Size(185, 45);
+            btnNewGame.Size = new Size(162, 45);
             btnNewGame.TabIndex = 17;
             btnNewGame.Text = "Restart";
             btnNewGame.UseVisualStyleBackColor = true;
