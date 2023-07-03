@@ -55,13 +55,13 @@ namespace BlackJack
         }
         private void GetImage()
         {
-            if (this.CardSuit!=0 && this.CardFace != 0)
+            if (this.CardSuit != 0 && this.CardFace != 0)
             {
                 int x = 0;
                 int y = 0;
                 int height = 97;
                 int width = 73;
-                switch(this.CardSuit)
+                switch (this.CardSuit)
                 {
                     case Suit.Hearts:
                         y = 196;
@@ -78,10 +78,10 @@ namespace BlackJack
                 }
                 x = width * ((int)this.CardFace - 1);
                 //ResourceManager r = BlackJack.Properties.Resources.ResourceManager;
-                Bitmap source = new Bitmap("cards.png",true);
-                Bitmap img = new Bitmap (width, height);
-                Graphics g = Graphics.FromImage (img);
-                g.DrawImage(source, new Rectangle(0, 0, width, height), new Rectangle(x, y, width, height),GraphicsUnit.Pixel);
+                Bitmap source = new Bitmap("cards.png", true);
+                Bitmap img = new Bitmap(width, height);
+                Graphics g = Graphics.FromImage(img);
+                g.DrawImage(source, new Rectangle(0, 0, width, height), new Rectangle(x, y, width, height), GraphicsUnit.Pixel);
                 g.Dispose();
                 this.image = img;
             }

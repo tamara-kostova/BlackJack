@@ -28,23 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            splitContainer1 = new SplitContainer();
             lblscorePlayer = new Label();
             lblscoreComputer = new Label();
             btnHit = new Button();
             btnStay = new Button();
+            btnDeal = new Button();
+            splitContainer1 = new SplitContainer();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.SuspendLayout();
             SuspendLayout();
-            // 
-            // splitContainer1
-            // 
-            splitContainer1.Location = new Point(0, 0);
-            splitContainer1.Name = "splitContainer1";
-            splitContainer1.Orientation = Orientation.Horizontal;
-            splitContainer1.Size = new Size(926, 449);
-            splitContainer1.SplitterDistance = 216;
-            splitContainer1.TabIndex = 0;
             // 
             // lblscorePlayer
             // 
@@ -84,16 +76,35 @@
             btnStay.UseVisualStyleBackColor = true;
             btnStay.Click += btnStay_Click;
             // 
+            // btnDeal
+            // 
+            btnDeal.Location = new Point(943, 135);
+            btnDeal.Name = "btnDeal";
+            btnDeal.Size = new Size(112, 34);
+            btnDeal.TabIndex = 5;
+            btnDeal.Text = "Deal";
+            btnDeal.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            splitContainer1.Orientation = Orientation.Horizontal;
+            splitContainer1.Size = new Size(824, 449);
+            splitContainer1.SplitterDistance = 224;
+            splitContainer1.TabIndex = 6;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 504);
+            Controls.Add(splitContainer1);
+            Controls.Add(btnDeal);
             Controls.Add(btnStay);
             Controls.Add(btnHit);
             Controls.Add(lblscoreComputer);
             Controls.Add(lblscorePlayer);
-            Controls.Add(splitContainer1);
             Name = "Form1";
             Text = "Form1";
             Paint += Form1_Paint;
@@ -104,11 +115,11 @@
         }
 
         #endregion
-
-        private SplitContainer splitContainer1;
         private Label lblscorePlayer;
         private Label lblscoreComputer;
         private Button btnHit;
         private Button btnStay;
+        private Button btnDeal;
+        private SplitContainer splitContainer1;
     }
 }
