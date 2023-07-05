@@ -63,8 +63,6 @@ namespace BlackJack
                 dealerScore = 0;
                 playerCardsCount = 0;
 
-                dScore1 = 0;
-                dScore2 = 0;
                 pScore1 = 0;
                 pScore2 = 0;
 
