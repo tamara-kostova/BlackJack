@@ -99,6 +99,8 @@
             // dealerCard1
             // 
             dealerCard1.Location = new Point(235, 12);
+            dealerCard1.MaximumSize = new Size(75, 107);
+            dealerCard1.MinimumSize = new Size(75, 107);
             dealerCard1.Name = "dealerCard1";
             dealerCard1.Size = new Size(75, 107);
             dealerCard1.TabIndex = 6;
@@ -107,6 +109,8 @@
             // dealerCard2
             // 
             dealerCard2.Location = new Point(344, 12);
+            dealerCard2.MaximumSize = new Size(75, 107);
+            dealerCard2.MinimumSize = new Size(75, 107);
             dealerCard2.Name = "dealerCard2";
             dealerCard2.Size = new Size(75, 107);
             dealerCard2.TabIndex = 7;
@@ -115,6 +119,8 @@
             // playerCard2
             // 
             playerCard2.Location = new Point(371, 374);
+            playerCard2.MaximumSize = new Size(75, 107);
+            playerCard2.MinimumSize = new Size(75, 107);
             playerCard2.Name = "playerCard2";
             playerCard2.Size = new Size(75, 107);
             playerCard2.TabIndex = 9;
@@ -123,6 +129,8 @@
             // playerCard1
             // 
             playerCard1.Location = new Point(235, 374);
+            playerCard1.MaximumSize = new Size(75, 107);
+            playerCard1.MinimumSize = new Size(75, 107);
             playerCard1.Name = "playerCard1";
             playerCard1.Size = new Size(75, 107);
             playerCard1.TabIndex = 8;
@@ -131,6 +139,8 @@
             // playerCard4
             // 
             playerCard4.Location = new Point(168, 184);
+            playerCard4.MaximumSize = new Size(75, 107);
+            playerCard4.MinimumSize = new Size(75, 107);
             playerCard4.Name = "playerCard4";
             playerCard4.Size = new Size(75, 107);
             playerCard4.TabIndex = 11;
@@ -139,6 +149,8 @@
             // playerCard3
             // 
             playerCard3.Location = new Point(32, 184);
+            playerCard3.MaximumSize = new Size(75, 107);
+            playerCard3.MinimumSize = new Size(75, 107);
             playerCard3.Name = "playerCard3";
             playerCard3.Size = new Size(75, 107);
             playerCard3.TabIndex = 10;
@@ -147,6 +159,8 @@
             // playerCard6
             // 
             playerCard6.Location = new Point(443, 184);
+            playerCard6.MaximumSize = new Size(75, 107);
+            playerCard6.MinimumSize = new Size(75, 107);
             playerCard6.Name = "playerCard6";
             playerCard6.Size = new Size(75, 107);
             playerCard6.TabIndex = 13;
@@ -155,6 +169,8 @@
             // playerCard5
             // 
             playerCard5.Location = new Point(307, 184);
+            playerCard5.MaximumSize = new Size(75, 107);
+            playerCard5.MinimumSize = new Size(75, 107);
             playerCard5.Name = "playerCard5";
             playerCard5.Size = new Size(75, 107);
             playerCard5.TabIndex = 12;
@@ -163,6 +179,8 @@
             // playerCard8
             // 
             playerCard8.Location = new Point(703, 184);
+            playerCard8.MaximumSize = new Size(75, 107);
+            playerCard8.MinimumSize = new Size(75, 107);
             playerCard8.Name = "playerCard8";
             playerCard8.Size = new Size(75, 107);
             playerCard8.TabIndex = 15;
@@ -171,6 +189,8 @@
             // playerCard7
             // 
             playerCard7.Location = new Point(567, 184);
+            playerCard7.MaximumSize = new Size(75, 107);
+            playerCard7.MinimumSize = new Size(75, 107);
             playerCard7.Name = "playerCard7";
             playerCard7.Size = new Size(75, 107);
             playerCard7.TabIndex = 14;
@@ -179,6 +199,8 @@
             // playerCard9
             // 
             playerCard9.Location = new Point(834, 184);
+            playerCard9.MaximumSize = new Size(75, 107);
+            playerCard9.MinimumSize = new Size(75, 107);
             playerCard9.Name = "playerCard9";
             playerCard9.Size = new Size(75, 107);
             playerCard9.TabIndex = 16;
@@ -207,7 +229,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1067, 504);
+            ClientSize = new Size(1078, 494);
             Controls.Add(dealerDraws);
             Controls.Add(btnNewGame);
             Controls.Add(playerCard9);
