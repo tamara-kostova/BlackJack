@@ -61,15 +61,20 @@
             // lblscorePlayer
             // 
             lblscorePlayer.AutoSize = true;
+            lblscorePlayer.BackColor = Color.Transparent;
+            lblscorePlayer.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblscorePlayer.ForeColor = SystemColors.ButtonFace;
             lblscorePlayer.Location = new Point(850, 421);
             lblscorePlayer.Name = "lblscorePlayer";
-            lblscorePlayer.Size = new Size(98, 25);
+            lblscorePlayer.Size = new Size(106, 28);
             lblscorePlayer.TabIndex = 0;
             lblscorePlayer.Text = "Your score:";
             // 
             // lblDealer
             // 
             lblDealer.AutoSize = true;
+            lblDealer.BackColor = Color.Transparent;
+            lblDealer.ForeColor = SystemColors.ButtonFace;
             lblDealer.Location = new Point(850, 9);
             lblDealer.Name = "lblDealer";
             lblDealer.Size = new Size(113, 25);
@@ -219,9 +224,12 @@
             // dealerDraws
             // 
             dealerDraws.AutoSize = true;
+            dealerDraws.BackColor = Color.Transparent;
+            dealerDraws.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dealerDraws.ForeColor = SystemColors.ButtonFace;
             dealerDraws.Location = new Point(399, 144);
             dealerDraws.Name = "dealerDraws";
-            dealerDraws.Size = new Size(118, 25);
+            dealerDraws.Size = new Size(128, 28);
             dealerDraws.TabIndex = 18;
             dealerDraws.Text = "Dealer draws:";
             // 
