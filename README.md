@@ -1,4 +1,4 @@
-# BlackJack
+da# BlackJack
 Проектна задача по предметот Визуелно Програмирање 
 
 **Тамара Костова, Бојана Јанческа, Никола Пендевски**
@@ -94,4 +94,12 @@ private void GameOver(string Condition)
 
 
 #4 ***Неколку можни сценарија од играта***
+
+-победа
+
+<img width="541" alt="win" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/be7d213d-4c8f-44fa-8bb1-8c031262ad87">
+
+-пораз
+
+<img width="536" alt="loss" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/e91bd1b4-b33b-4821-a7a1-843f47211b64">
 
