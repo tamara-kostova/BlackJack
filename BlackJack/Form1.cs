@@ -16,7 +16,7 @@ namespace BlackJack
         public Form1()
         {
 
-            this.BackgroundImage = Properties.Resources.backgroundl;
+            this.BackgroundImage = Properties.Resources.back;
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
