@@ -64,9 +64,10 @@
             lblscorePlayer.BackColor = Color.Transparent;
             lblscorePlayer.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblscorePlayer.ForeColor = SystemColors.ButtonFace;
-            lblscorePlayer.Location = new Point(850, 421);
+            lblscorePlayer.Location = new Point(680, 337);
+            lblscorePlayer.Margin = new Padding(2, 0, 2, 0);
             lblscorePlayer.Name = "lblscorePlayer";
-            lblscorePlayer.Size = new Size(106, 28);
+            lblscorePlayer.Size = new Size(93, 23);
             lblscorePlayer.TabIndex = 0;
             lblscorePlayer.Text = "Your score:";
             // 
@@ -75,17 +76,19 @@
             lblDealer.AutoSize = true;
             lblDealer.BackColor = Color.Transparent;
             lblDealer.ForeColor = SystemColors.ButtonFace;
-            lblDealer.Location = new Point(850, 9);
+            lblDealer.Location = new Point(680, 7);
+            lblDealer.Margin = new Padding(2, 0, 2, 0);
             lblDealer.Name = "lblDealer";
-            lblDealer.Size = new Size(113, 25);
+            lblDealer.Size = new Size(95, 20);
             lblDealer.TabIndex = 1;
             lblDealer.Text = "Dealer score:";
             // 
             // btnHit
             // 
-            btnHit.Location = new Point(567, 374);
+            btnHit.Location = new Point(454, 299);
+            btnHit.Margin = new Padding(2);
             btnHit.Name = "btnHit";
-            btnHit.Size = new Size(112, 34);
+            btnHit.Size = new Size(90, 27);
             btnHit.TabIndex = 2;
             btnHit.Text = "Hit";
             btnHit.UseVisualStyleBackColor = true;
@@ -93,9 +96,10 @@
             // 
             // btnStay
             // 
-            btnStay.Location = new Point(567, 435);
+            btnStay.Location = new Point(454, 348);
+            btnStay.Margin = new Padding(2);
             btnStay.Name = "btnStay";
-            btnStay.Size = new Size(112, 34);
+            btnStay.Size = new Size(90, 27);
             btnStay.TabIndex = 3;
             btnStay.Text = "Stay";
             btnStay.UseVisualStyleBackColor = true;
@@ -103,7 +107,8 @@
             // 
             // dealerCard1
             // 
-            dealerCard1.Location = new Point(235, 12);
+            dealerCard1.Location = new Point(188, 10);
+            dealerCard1.Margin = new Padding(2);
             dealerCard1.MaximumSize = new Size(75, 107);
             dealerCard1.MinimumSize = new Size(75, 107);
             dealerCard1.Name = "dealerCard1";
@@ -113,7 +118,8 @@
             // 
             // dealerCard2
             // 
-            dealerCard2.Location = new Point(344, 12);
+            dealerCard2.Location = new Point(275, 10);
+            dealerCard2.Margin = new Padding(2);
             dealerCard2.MaximumSize = new Size(75, 107);
             dealerCard2.MinimumSize = new Size(75, 107);
             dealerCard2.Name = "dealerCard2";
@@ -123,7 +129,8 @@
             // 
             // playerCard2
             // 
-            playerCard2.Location = new Point(371, 374);
+            playerCard2.Location = new Point(297, 299);
+            playerCard2.Margin = new Padding(2);
             playerCard2.MaximumSize = new Size(75, 107);
             playerCard2.MinimumSize = new Size(75, 107);
             playerCard2.Name = "playerCard2";
@@ -133,7 +140,8 @@
             // 
             // playerCard1
             // 
-            playerCard1.Location = new Point(235, 374);
+            playerCard1.Location = new Point(188, 299);
+            playerCard1.Margin = new Padding(2);
             playerCard1.MaximumSize = new Size(75, 107);
             playerCard1.MinimumSize = new Size(75, 107);
             playerCard1.Name = "playerCard1";
@@ -143,7 +151,8 @@
             // 
             // playerCard4
             // 
-            playerCard4.Location = new Point(168, 184);
+            playerCard4.Location = new Point(134, 147);
+            playerCard4.Margin = new Padding(2);
             playerCard4.MaximumSize = new Size(75, 107);
             playerCard4.MinimumSize = new Size(75, 107);
             playerCard4.Name = "playerCard4";
@@ -153,7 +162,8 @@
             // 
             // playerCard3
             // 
-            playerCard3.Location = new Point(32, 184);
+            playerCard3.Location = new Point(26, 147);
+            playerCard3.Margin = new Padding(2);
             playerCard3.MaximumSize = new Size(75, 107);
             playerCard3.MinimumSize = new Size(75, 107);
             playerCard3.Name = "playerCard3";
@@ -163,7 +173,8 @@
             // 
             // playerCard6
             // 
-            playerCard6.Location = new Point(443, 184);
+            playerCard6.Location = new Point(354, 147);
+            playerCard6.Margin = new Padding(2);
             playerCard6.MaximumSize = new Size(75, 107);
             playerCard6.MinimumSize = new Size(75, 107);
             playerCard6.Name = "playerCard6";
@@ -173,7 +184,8 @@
             // 
             // playerCard5
             // 
-            playerCard5.Location = new Point(307, 184);
+            playerCard5.Location = new Point(246, 147);
+            playerCard5.Margin = new Padding(2);
             playerCard5.MaximumSize = new Size(75, 107);
             playerCard5.MinimumSize = new Size(75, 107);
             playerCard5.Name = "playerCard5";
@@ -183,7 +195,8 @@
             // 
             // playerCard8
             // 
-            playerCard8.Location = new Point(703, 184);
+            playerCard8.Location = new Point(562, 147);
+            playerCard8.Margin = new Padding(2);
             playerCard8.MaximumSize = new Size(75, 107);
             playerCard8.MinimumSize = new Size(75, 107);
             playerCard8.Name = "playerCard8";
@@ -193,7 +206,8 @@
             // 
             // playerCard7
             // 
-            playerCard7.Location = new Point(567, 184);
+            playerCard7.Location = new Point(454, 147);
+            playerCard7.Margin = new Padding(2);
             playerCard7.MaximumSize = new Size(75, 107);
             playerCard7.MinimumSize = new Size(75, 107);
             playerCard7.Name = "playerCard7";
@@ -203,7 +217,8 @@
             // 
             // playerCard9
             // 
-            playerCard9.Location = new Point(834, 184);
+            playerCard9.Location = new Point(667, 147);
+            playerCard9.Margin = new Padding(2);
             playerCard9.MaximumSize = new Size(75, 107);
             playerCard9.MinimumSize = new Size(75, 107);
             playerCard9.Name = "playerCard9";
@@ -213,9 +228,10 @@
             // 
             // btnNewGame
             // 
-            btnNewGame.Location = new Point(12, 33);
+            btnNewGame.Location = new Point(10, 26);
+            btnNewGame.Margin = new Padding(2);
             btnNewGame.Name = "btnNewGame";
-            btnNewGame.Size = new Size(162, 45);
+            btnNewGame.Size = new Size(130, 36);
             btnNewGame.TabIndex = 17;
             btnNewGame.Text = "Restart";
             btnNewGame.UseVisualStyleBackColor = true;
@@ -227,17 +243,18 @@
             dealerDraws.BackColor = Color.Transparent;
             dealerDraws.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             dealerDraws.ForeColor = SystemColors.ButtonFace;
-            dealerDraws.Location = new Point(399, 144);
+            dealerDraws.Location = new Point(319, 115);
+            dealerDraws.Margin = new Padding(2, 0, 2, 0);
             dealerDraws.Name = "dealerDraws";
-            dealerDraws.Size = new Size(128, 28);
+            dealerDraws.Size = new Size(112, 23);
             dealerDraws.TabIndex = 18;
             dealerDraws.Text = "Dealer draws:";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1078, 494);
+            ClientSize = new Size(852, 423);
             Controls.Add(dealerDraws);
             Controls.Add(btnNewGame);
             Controls.Add(playerCard9);
@@ -256,6 +273,7 @@
             Controls.Add(lblDealer);
             Controls.Add(lblscorePlayer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
