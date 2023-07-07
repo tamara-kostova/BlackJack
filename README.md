@@ -97,9 +97,16 @@ private void GameOver(string Condition)
 
 -победа
 
-<img width="541" alt="win" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/be7d213d-4c8f-44fa-8bb1-8c031262ad87">
+<img width="533" alt="win" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/c92527f6-c92a-4b58-84ce-b0467cbd139b">
+
 
 -пораз
 
-<img width="536" alt="loss" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/e91bd1b4-b33b-4821-a7a1-843f47211b64">
+<img width="532" alt="loss" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/f6cbdc00-5155-4348-9f35-d9fea658caea">
+
+-нерешено
+
+<img width="532" alt="tie" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/0db9b79b-c9e9-4e6d-845c-029a328969ec">
+
+
 
