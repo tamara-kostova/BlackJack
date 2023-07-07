@@ -72,6 +72,8 @@ namespace BlackJack
                 card = null;
                 dCard = null;
 
+                lblscorePlayer.Text = "Your score: " + playerScore;
+
                 Random random = new Random();
 
                 dScore1 = random.Next(1, 13);
