@@ -109,4 +109,6 @@ private void GameOver(string Condition)
 <img width="532" alt="tie" src="https://github.com/tamara-kostova/BlackJack/assets/90916955/0db9b79b-c9e9-4e6d-845c-029a328969ec">
 
 
+*фолдерот со слики cards треба да биде сместен на следната локација за сликите да се вчитаат соодветно:
+BlackJack\BlackJack\bin\Debug\net6.0-windows\cards
 
