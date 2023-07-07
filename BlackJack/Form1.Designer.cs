@@ -265,6 +265,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.ForestGreen;
             ClientSize = new Size(1065, 529);
             Controls.Add(dealerDraws);
             Controls.Add(btnNewGame);
