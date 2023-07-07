@@ -67,6 +67,8 @@ namespace BlackJack
 
                 pScore1 = 0;
                 pScore2 = 0;
+                dScore1 = 0;
+                dScore2 = 0;
 
                 suit = null;
                 card = null;
@@ -95,7 +97,6 @@ namespace BlackJack
                 dealerCard2.Image = Image.FromFile("cards/" + suit + "-" + card + "-75.png");
                 DealerSecondCard = suit + "-" + card + "-75.png";
 
-                Debug.Print("dealerScore: " + dealerScore);
                 lblDealer.Visible = false;
                 lblDealer.Text = "Dealer score: " + dealerScore;
 
@@ -118,6 +119,7 @@ namespace BlackJack
                     PlayerSecondCard = dCard;
 
                     playerScore = pScore1 + pScore2;
+                    lblscorePlayer.Text = "Your score: " + playerScore;
                     playerCardsCount = 2;
                 }
                 else
