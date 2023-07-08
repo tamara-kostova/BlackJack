@@ -16,7 +16,7 @@ namespace BlackJack
         public Form1()
         {
 
-            //this.BackgroundImage = Properties.Resources.back;
+           // this.BackgroundImage = Properties.Resources.back;
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -119,6 +119,9 @@ namespace BlackJack
                     PlayerSecondCard = dCard;
 
                     playerScore = pScore1 + pScore2;
+                    if(playerScore+10<=21 && (pScore1==1 || pScore2==1)) {
+                        playerScore += 10;
+                    }
                     lblscorePlayer.Text = "Your score: " + playerScore;
                     playerCardsCount = 2;
                 }
@@ -188,8 +191,14 @@ namespace BlackJack
             {
                 GameOver("tooManyCards");
             }
-
-            playerScore += cardValue;
+            if (playerScore + 11 <= 21 && cardValue == 1)
+            {
+                playerScore+=11;
+            }
+            else
+            {
+                playerScore += cardValue;
+            }
             lblscorePlayer.Text = "Your score: " + playerScore;
 
             if (playerScore > 21)
